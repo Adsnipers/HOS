@@ -10,9 +10,8 @@
 	onMount( () => {
 		const interval = setInterval(() => {
 			date = new Date();
-			console.log(hour)
 			AMorPM = (hour >= 12) ? "PM" : "AM";
-			if (hour >= 17) {
+			if (hour >= 18) {
 				welcomeMessage = "Good Evening"
 			} else if (hour >= 12) {
 				welcomeMessage = "Good Afternoon"
